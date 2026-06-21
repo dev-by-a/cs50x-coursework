@@ -1,0 +1,13 @@
+Q1
+Looking at the averages — energy around 0.66, danceability around 0.72, but valence only around 0.48 — I'd say this listener's vibe is "danceable but not necessarily happy."
+They clearly gravitate toward songs with a strong beat and high energy, the kind of music you'd want at a party or while working out.
+But the valence score being right in the middle tells me their playlist probably isn't all sunshine — there's likely a decent chunk of songs that sound upbeat on the surface but
+have more brooding or bittersweet lyrics underneath. So if I had to label it, I'd go with something like "moody party music" rather than pure happiness.
+
+
+Q2
+The biggest issue is that averaging just kind of erases all the variety. If this person listened to 50 super happy songs and 50 sad ones,
+the average would land right in the middle and make it look like they only listen to "okay" music — which isn't true at all.
+It also doesn't care how many times each song was actually played. A song that snuck into the top 100 with one or two plays gets weighted exactly the same as a song they had on repeat for weeks.
+I think a fairer approach would be to weight each song by play count, so the songs someone is actually obsessed with pull the average more than the ones they barely listened to.
+It'd also be worth looking at the spread of the data, not just the average — someone who's all over the place emotionally is very different from someone who's consistently in one mood, even if their averages look identical.
