@@ -1,0 +1,7 @@
+10 HTML tags used: nav, header, section, footer, div, a, button, span, h1, h2, h3, p, ul, li, strong, hr
+
+5 CSS properties used: background, color, font-family, font-size, border-radius
+
+JavaScript: Used a custom toggleDetails() function on the Projects page to expand/collapse architecture details on button click.
+
+Bootstrap: Used Bootstrap's navbar component (with responsive collapse/toggler for mobile) for site navigation, and Bootstrap's grid system (row/col) to lay out the skills section on the About page.

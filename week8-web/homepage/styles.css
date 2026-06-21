@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..600;1,6..72,300..500&family=Hanken+Grotesk:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+    --cream: #F6F1E9;
+    --charcoal: #2A2521;
+    --body-text: #4A423B;
+    --muted: #9A9189;
+    --navy: #1B2A4A;
+    --border: rgba(42,37,33,0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cream);
+    color: var(--charcoal);
+    font-family: 'Hanken Grotesk', system-ui, sans-serif;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* NAV */
+.site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(246,241,233,0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 0;
+}
+
+.site-nav .navbar-brand {
+    font-family: 'Newsreader', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--charcoal) !important;
+}
+
+.site-nav .nav-link {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted) !important;
+    transition: color 0.2s;
+}
+
+.site-nav .nav-link:hover {
+    color: var(--navy) !important;
+}
+
+.navbar-toggler {
+    border: 1px solid var(--border);
+}
+
+/* HERO */
+.hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 90px 24px 70px;
+}
+
+.hero .eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 28px;
+}
+
+.eyebrow .dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--navy);
+    box-shadow: 0 0 0 4px rgba(27,42,74,0.15);
+}
+
+.hero h1 {
+    font-family: 'Newsreader', serif;
+    font-weight: 400;
+    font-size: clamp(42px, 8vw, 90px);
+    line-height: 1.02;
+    letter-spacing: -0.02em;
+    margin: 0 0 24px;
+    max-width: 14ch;
+}
+
+.hero h1 .dot-accent {
+    color: var(--navy);
+}
+
+.hero p.lead {
+    font-size: clamp(18px, 2vw, 23px);
+    line-height: 1.5;
+    color: var(--body-text);
+    max-width: 32ch;
+    margin: 0;
+}
+
+.hero .cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 40px;
+}
+
+.btn-dark-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 24px;
+    background: var(--charcoal);
+    color: var(--cream);
+    border-radius: 2px;
+    font-size: 14.5px;
+    font-weight: 500;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-dark-pill:hover {
+    background: var(--navy);
+    transform: translateY(-2px);
+    color: var(--cream);
+}
+
+.btn-outline-pill {
+    display: inline-flex;
+    align-items: center;
+    padding: 14px 24px;
+    border: 1px solid rgba(42,37,33,0.22);
+    border-radius: 2px;
+    font-size: 14.5px;
+    font-weight: 500;
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.btn-outline-pill:hover {
+    border-color: var(--navy);
+    color: var(--navy);
+}
+
+/* SECTIONS */
+.section {
+    border-top: 1px solid var(--border);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 24px;
+}
+
+.section-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 40px;
+    font-weight: 500;
+}
+
+.lead-text {
+    font-family: 'Newsreader', serif;
+    font-size: clamp(22px, 3vw, 30px);
+    line-height: 1.32;
+    margin: 0 0 20px;
+}
+
+.body-text {
+    font-size: 16.5px;
+    line-height: 1.7;
+    color: var(--body-text);
+    max-width: 60ch;
+}
+
+/* STATS */
+.stat-row {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.stat-block .stat-number {
+    font-family: 'Newsreader', serif;
+    font-size: 34px;
+    line-height: 1;
+    color: var(--charcoal);
+}
+
+.stat-block .stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-top: 6px;
+}
+
+/* SKILLS */
+.skill-group h3 {
+    font-family: 'Newsreader', serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0 0 14px;
+}
+
+.skill-group hr {
+    border: none;
+    height: 1px;
+    background: rgba(42,37,33,0.12);
+    margin: 0 0 14px;
+}
+
+.skill-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15.5px;
+    color: var(--body-text);
+}
+
+.skill-group li {
+    padding: 5px 0;
+}
+
+/* TIMELINE (Journey) */
+.timeline-row {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 24px;
+    padding: 26px 0;
+    border-top: 1px solid var(--border);
+}
+
+.timeline-row .when {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--navy);
+    padding-top: 4px;
+}
+
+.timeline-row .title {
+    font-family: 'Newsreader', serif;
+    font-size: 24px;
+    margin: 0 0 6px;
+    font-weight: 400;
+}
+
+.timeline-row .desc {
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: var(--body-text);
+    max-width: 56ch;
+}
+
+/* PROJECT CARD */
+.project-card {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 32px;
+    margin-bottom: 24px;
+}
+
+.project-tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    color: var(--cream);
+    background: var(--navy);
+    padding: 4px 9px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 16px;
+}
+
+.project-card h2 {
+    font-family: 'Newsreader', serif;
+    font-weight: 400;
+    margin: 0 0 14px;
+}
+
+/* FOOTER */
+.site-footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 70px 24px 50px;
+    border-top: 1px solid var(--border);
+}
+
+.site-footer h2 {
+    font-family: 'Newsreader', serif;
+    font-weight: 400;
+    font-size: clamp(32px, 6vw, 60px);
+    line-height: 1.05;
+    max-width: 16ch;
+    margin: 0 0 32px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.footer-meta {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11.5px;
+    color: var(--muted);
+}

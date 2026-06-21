@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            document.addEventListener('DOMContentLoaded', function() {
+
+                let corrects = document.querySelectorAll('.correct');
+                for (let i = 0; i < corrects.length; i++) {
+                    corrects[i].addEventListener('click', function() {
+                        corrects[i].style.backgroundColor = 'green';
+                        corrects[i].parentElement.querySelector('.feedback').innerHTML = 'Correct!';
+                });
+            }
+
+                let incorrects = document.querySelectorAll('.incorrect');
+                for (let i = 0; i < incorrects.length; i++) {
+                    incorrects[i].addEventListener('click', function() {
+                        incorrects[i].style.backgroundColor = 'red';
+                        incorrects[i].parentElement.querySelector('.feedback').innerHTML = 'Incorrect';
+                });
+            }
+
+            document.querySelector('#check').addEventListener('click', function() {
+                let input = document.querySelector('input');
+                if (input.value === 'BFS') {
+                    input.style.backgroundColor = 'green';
+                    input.parentElement.querySelector('.feedback').innerHTML = 'Correct!';
+                }
+                else {
+                    input.style.backgroundColor = 'red';
+                    input.parentElement.querySelector('.feedback').innerHTML = 'Incorrect';
+                }
+            });
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                 <h3>What is the worst-case time complexity of standard Quicksort?</h3>
+                 <button class ="incorrect">O(N)</button>
+                 <button class ="incorrect">O(N+1)</button>
+                 <button class ="correct">O(N^2)</button>
+                 <p class="feedback"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                 <h3>Which graph traversal algorithm is best suited for finding the shortest path on an unweighted graph?</h3>
+                 <input type="text">
+                 <button id="check">Check Answer</button>
+                 <p class="feedback"></p>
+            </div>
+        </div>
+    </body>
+</html>
